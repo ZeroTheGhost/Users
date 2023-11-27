@@ -1,0 +1,38 @@
+namespace UserConsole {
+    internal class Program {
+        protected static User user { get; set; }
+        static void Main(string[] args) {
+            Login();
+        }
+        public static void Login() {
+            string json = File.ReadAllText(" ");
+            User[] users = JsonSerializer.Deserialize(json, typeof(User[])) as User[];
+            user = new User();
+            string command = "";
+            while (command.ToLower() != "end") {
+                Console.Write(user.Username + ">");
+                command = Console.ReadLine();
+                if (command == "login") {
+                    Console.Write("username: ");
+                    command = Console.ReadLine();
+                    for (int i = 0; i < users.Count(); i++) {
+                        if (command == users[i].Username) {
+                            Console.Write("password: ");
+                            command = Console.ReadLine();
+                            if (command == users[i].Password) {
+                                user = users[i];
+                                Console.WriteLine(user.Username + ">");
+                            }
+                            else {
+                                Console.WriteLine("Wrong password!");
+                            }
+                        }
+                        else {
+                            Console.WriteLine("Wrong username!");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
