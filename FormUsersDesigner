@@ -1,0 +1,144 @@
+namespace WindowsFormsApp2 {
+    partial class FormUsers {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent() {
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonCreate = new System.Windows.Forms.Button();
+            this.buttonRead = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.SaveJSON = new System.Windows.Forms.Button();
+            this.LoadJSON = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(13, 13);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(248, 303);
+            this.listBox1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(651, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 39);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonCreate
+            // 
+            this.buttonCreate.Location = new System.Drawing.Point(283, 13);
+            this.buttonCreate.Name = "buttonCreate";
+            this.buttonCreate.Size = new System.Drawing.Size(91, 29);
+            this.buttonCreate.TabIndex = 2;
+            this.buttonCreate.Text = "Create";
+            this.buttonCreate.UseVisualStyleBackColor = true;
+            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
+            // 
+            // buttonRead
+            // 
+            this.buttonRead.Location = new System.Drawing.Point(283, 48);
+            this.buttonRead.Name = "buttonRead";
+            this.buttonRead.Size = new System.Drawing.Size(91, 30);
+            this.buttonRead.TabIndex = 3;
+            this.buttonRead.Text = "Read";
+            this.buttonRead.UseVisualStyleBackColor = true;
+            this.buttonRead.Click += new System.EventHandler(this.buttonRead_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(283, 84);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(91, 29);
+            this.buttonUpdate.TabIndex = 4;
+            this.buttonUpdate.Text = "Update";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(283, 120);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(91, 26);
+            this.buttonDelete.TabIndex = 5;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // SaveJSON
+            // 
+            this.SaveJSON.Location = new System.Drawing.Point(283, 193);
+            this.SaveJSON.Name = "SaveJSON";
+            this.SaveJSON.Size = new System.Drawing.Size(91, 32);
+            this.SaveJSON.TabIndex = 6;
+            this.SaveJSON.Text = "Save JSON";
+            this.SaveJSON.UseVisualStyleBackColor = true;
+            this.SaveJSON.Click += new System.EventHandler(this.SaveJSON_Click);
+            // 
+            // LoadJSON
+            // 
+            this.LoadJSON.Location = new System.Drawing.Point(283, 231);
+            this.LoadJSON.Name = "LoadJSON";
+            this.LoadJSON.Size = new System.Drawing.Size(91, 30);
+            this.LoadJSON.TabIndex = 7;
+            this.LoadJSON.Text = "Load JSON";
+            this.LoadJSON.UseVisualStyleBackColor = true;
+            this.LoadJSON.Click += new System.EventHandler(this.LoadJSON_Click);
+            // 
+            // FormUsers
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LoadJSON);
+            this.Controls.Add(this.SaveJSON);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonUpdate);
+            this.Controls.Add(this.buttonRead);
+            this.Controls.Add(this.buttonCreate);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
+            this.Name = "FormUsers";
+            this.Text = "FormUsers";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonCreate;
+        private System.Windows.Forms.Button buttonRead;
+        private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button SaveJSON;
+        private System.Windows.Forms.Button LoadJSON;
+    }
+}
